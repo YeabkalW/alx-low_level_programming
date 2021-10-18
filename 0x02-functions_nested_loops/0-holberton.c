@@ -1,20 +1,21 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * main - Entry block
- * Description: prints holberton on new line
- * Return: 0
- */
+  * main - Print text
+  *
+  * Return: 0 for success
+  *
+  */
 int main(void)
+
 {
-	char c[10] = "Holberton";
+	char *sh = "Holberton";
 
-	int i = 0;
-
-	while (i < 9)
+	while (*sh)
 	{
-		_putchar(c[i]);
-		i++;
-	}
-	_putchar('\n');
+		_putchar(*sh);
+		sh++;
+	}	
+	_putchar ('\n');
 	return (0);
 }
